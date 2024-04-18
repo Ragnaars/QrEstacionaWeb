@@ -1,0 +1,57 @@
+<header style="text-align: center; background-color: #012c56">
+  <img
+    src="../../../assets/estduoc.png"
+    style="max-height: 100px; max-width: 100%; margin: 0 auto"
+  />
+</header>
+
+<div style="display: flex; flex-direction: column; align-items: center">
+  <h1 style="text-align: center">dashboards</h1>
+
+  <div
+    style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px"
+  >
+    <div style="flex: 1; max-width: 600px; text-align: center">
+      <p>Barchart</p>
+      <canvas id="barchart" style="max-width: 100%"></canvas>
+      <div style="background: #012c56; padding: 10px">
+        <h3 style="color: #fff">
+          El estacionamiento más ocupado es el nro : {{ maxKey }} con
+          {{ maxBar }} veces
+        </h3>
+        <h3 style="color: #fff">
+          El estacionamiento menos ocupado es el nro : {{ minKey }} con
+          {{ minBar }} veces
+        </h3>
+      </div>
+    </div>
+
+    <div style="flex: 1; max-width: 600px; text-align: center">
+      <p>Radarchart</p>
+      <canvas id="rochart" style="max-width: 100%"></canvas>
+      <div style="background: #012c56; padding: 10px">
+        <h3 style="color: #fff">
+          Horas con mas movimiento vehicular: {{ maxHora }}Hrs
+        </h3>
+        <h3 style="color: #fff">
+          Horas con menos movimiento vehicular : {{ minHora }}Hrs
+        </h3>
+      </div>
+    </div>
+
+    <div style="flex: 1; max-width: 600px; text-align: center">
+      <p>Piechart</p>
+      <canvas id="piechart" style="max-width: 100%"></canvas>
+      <div style="background: #012c56; padding: 10px">
+        <h3 style="color: #fff">
+          El estacionamiento más ocupado es el nro : {{ maxKey }} con
+          {{ maxBar }} veces
+        </h3>
+        <h3 style="color: #fff">
+          El estacionamiento menos ocupado es el nro : {{ minKey }} con
+          {{ minBar }} veces
+        </h3>
+      </div>
+    </div>
+  </div>
+</div>
